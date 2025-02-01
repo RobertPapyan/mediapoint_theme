@@ -1,0 +1,277 @@
+/*
+Theme Name: JNews - Child Theme
+Version: 1.0.0
+Theme URI: http://themeforest.net/?ref=jegtheme
+Description: A basic starter child theme for customization purpose of JNews theme.
+Author: Jegtheme
+Author URI: http://themeforest.net/user/jegtheme?ref=jegtheme
+Template: jnews
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+/* ------------------------------------------------------------------------- *
+ *  Theme customization starts here
+/* ------------------------------------------------------------------------- */
+.only-home {display: none;}
+body.home .only-home {display: block;}
+.jeg_thumb .jeg_post_category, .jeg_slide_caption .jeg_post_meta span.jeg_meta_author, .jeg_post_meta .jeg_meta_author, .jeg_post_meta .jeg_meta_comment {
+	display: none;
+}
+body.page .entry-header {display: none}
+.jeg_midbar .jeg_top_weather > .jeg_weather_temp > .jeg_weather_unit {
+	display: inline-block;
+}
+
+.jeg_overlay_slider_item {
+    background: rgba(55, 144, 179, 0.30);
+}
+.jeg_overlay_slider {
+    margin-top: -10px;
+}
+.category-none .jeg_thumb .jeg_post_category {
+	display: none;
+}
+/* home page 3 categories posts */
+.col-1-3-categories .jeg_postblock_22.jeg_col_1o3 .jeg_post {
+	width: 100%;
+}
+.col-1-3-categories .jeg_thumb .jeg_post_category {
+	display: none;
+}
+.jeg_single_tpl_2 .entry-header .jeg_post_title {
+	font-size: 30px;
+}
+@media only screen and (min-width: 768px) {
+.col-1-3-categories .jeg_postblock_22.jeg_col_1o3 .jeg_post_title {
+    font-size: 16px;
+}
+.col-1-3-categories .jeg_postblock_22.jeg_col_1o3 .jeg_post_meta {
+    display: block;
+}
+}
+
+/* Video playlist */
+.video-playlist .jeg_video_playlist_current_info {
+	display: none;
+}
+.video-playlist .jeg_video_playlist_current {
+	padding: 15px 15px;
+}
+.video-playlist .jeg_vertical_playlist .jeg_video_playlist_play span {
+	font-size: 20px;
+}
+.video-playlist .jeg_vertical_playlist .jeg_video_playlist_item.active .jeg_video_playlist_thumbnail:before {
+	display: none;
+}
+
+
+
+/* footer vecto logo */
+.vecto {
+   position: absolute;
+    top: 10px;
+    right: 0;
+    width: 102px;
+}
+.vecto span {
+    font-size: 14px;
+    letter-spacing: 3px;
+    position: relative;
+    top: 10px;
+}
+.vecto img.vecto-red {
+    display: none;
+}
+.vecto:hover img.vecto-black, .vecto:focus img.vecto-black, .vecto:active img.vecto-black {
+    display: none;
+}
+.vecto:hover img.vecto-red, .vecto:focus img.vecto-red, .vecto:active img.vecto-red {
+    display: block;
+}
+
+
+/* mobile design */
+@media only screen and (max-width: 480px) {
+.jeg_prevnext_post:before {
+	display: none;
+}
+.jeg_overlay_slider_bottom.owl-carousel .owl-nav div {
+    font-size: 11px;
+}
+.jeg_overlay_slider_bottom.owl-carousel .owl-nav .owl-prev {
+	width: 15px;
+    height: 100%;
+    left: 20px;
+    top: 0;
+}
+.jeg_overlay_slider_bottom.owl-carousel .owl-nav .owl-next {
+	height: 100%;
+    width: 15px;
+}
+.vecto {
+    bottom: -35px;
+    right: 37%;
+}
+.padding-bottom {
+	padding-bottom: 50px;
+}
+h3.jeg_block_title, .jeg_footer .jeg_footer_heading h3, .jeg_footer .widget h2, .jeg_tabpost_nav li {
+    font-size: 18px;
+}
+iframe {
+    width: 100%;
+}
+}
+
+
+/* thumbnail img zoom effect */
+article.jeg_post .thumbnail-container>img {
+	transition: transform 1s ease;
+}
+article.jeg_post:hover .thumbnail-container>img {
+	transform: scale(1.2);
+}
+
+/* weather */
+.jeg_weather_location span {
+  display: none;
+}
+.jeg_weather_location:after {
+  content: 'Սյունիք';
+}
+.jeg_midbar .jeg_top_weather .jeg_weather_location {
+    font-size: 12px;
+}
+
+@media only screen and (min-width: 1200px) {
+    .jeg_slider_type_5 .jeg_slide_caption {
+    width: 90%;
+    max-width: 90% !important;
+}
+.vc_row[data-vc-stretch-content=true] .jeg_slider_type_5.jeg_col_3o3 .jeg_post_title {
+    font-size: 30px;
+    letter-spacing: 0.05em;
+}
+.jeg_slide_caption .jeg_post_category {
+    position: absolute;
+    top: -350px;
+    right: -235px;
+}
+
+}
+
+.jeg_pl_md_4 .jeg_post_title {
+    font-family: "Mardoto";
+    font-size: 15px;
+    line-height: 21px;
+}
+.jeg_pl_md_4 .jeg_post_title a {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.jeg_pl_sm .jeg_post_title {
+    font-family: "Mardoto";
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 400;
+}
+.jeg_pl_sm .jeg_post_title a {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+.jeg_postblock_carousel_1 .jeg_post_title a {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+
+}
+.jeg_horizontal_playlist .jeg_video_playlist_title {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+.jeg_pl_xs_4 .jeg_post_title {
+    font-family: "Mardoto";
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 400;
+}
+.jeg_pl_xs_4 .jeg_post_title a {
+
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+.jeg_pl_xs_4 .jeg_post_meta {
+    display: block;
+}
+
+.jeg_slider_type_5 .owl-nav div {
+    background: transparent;
+    border: 1px solid #fff;
+    box-shadow: none;
+    color: #fff !important;
+}
+.jeg_block_loadmore a {
+    background: #5c588c;
+}
+
+.jeg_midbar .jeg_top_weather > .jeg_weather_temp {
+    font-size: 15px !important;
+    line-height: 0.5 !important;
+}
+.jeg_midbar .jeg_top_weather > .jeg_weather_condition .jeg_weather_icon {
+    font-size: 25px !important;
+}
+
+.jeg_header .jeg_nav_aligncenter:hover  .jeg_nav_html .logo-hide {
+    opacity: 1;
+}
+.logo-hide {
+        color: #383435;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    position: absolute;
+    left: 41%;
+    top: 74%;
+    opacity: 0;
+}
+
+.widget .subscribe {
+    text-align: center;
+    padding: 30px;
+    border: 1px solid rgba(94, 128, 192, 0.34901960784313724);
+}
+
+.widget .subscribe i {
+    border: 1px solid #3d348b;
+    border-radius: 50px;
+    padding: 17px;
+    font-size: 20px;
+}
+
+.widget .subscribe h2 {
+    font-size: 22px;
+}
+.widget .subscribe p {
+    font-size: 12px;
+    margin-bottom: 0px;
+}
+.widget .subscribe .emaillist .es-field-wrap label {
+    visibility: hidden;
+}
+.widget .subscribe .emaillist .es-field-wrap label input.es_txt_email {
+    visibility: visible;
+}
+.widget .subscribe .emaillist input[type="submit"]{
+    width: 100%;
+}

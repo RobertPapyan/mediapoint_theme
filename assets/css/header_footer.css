@@ -1,0 +1,296 @@
+.jeg_header .site-title a img{
+    height: 60px;
+}
+
+
+
+
+
+
+
+
+.jeg_bottombar.jeg_navbar.jeg_container.jeg_navbar_wrapper.jeg_navbar_normal.jeg_navbar_normal{
+    padding-bottom: 16px;
+}
+
+
+.item_wrap.jeg_nav_alignright, .item_wrap.jeg_nav_aligncenter{
+    gap: 8px;
+}
+
+
+.jeg_nav_item.jeg_search_wrapper.jeg_search_popup_expand ,.jeg_nav_item.jeg_search_wrapper.search_icon.jeg_search_popup_expand{
+    background-color: #8A333E;
+    padding: 4px;
+    width: 32px;
+    border-radius: 8px;
+}
+
+.jeg_nav_item.jeg_search_wrapper.jeg_search_popup_expand a, .jeg_nav_item.jeg_search_wrapper.search_icon.jeg_search_popup_expand a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    height: 24px;
+    width: 24px;
+}
+.jeg_navbar_mobile .jeg_nav_row .jeg_nav_item.jeg_nav_html, .jeg_navbar .jeg_nav_item.jeg_nav_html{
+    padding: 0;
+}
+#calendar-icon, #calendar-icon-mobile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: #8A333E;
+    padding: 4px;
+    border-radius: 8px;
+}
+
+.jeg_nav_item.jeg_nav_html img{
+    width: 24px;
+    height: 24px;
+}
+
+
+
+/*      Calendar       */
+#calendar-mobile,#calendar {
+	display: none;
+}
+#calendar-icon-mobile:focus + #calendar{
+    display: block !important;
+}
+.show {
+	display: block !important;
+    
+}
+.calendar-icon, .calendar-icon img {
+	width: 20px;
+	cursor: pointer;
+}
+
+@keyframes CalendarOpenAnimation{
+    0%{
+        display: block;
+        opacity: 0%;
+        transform: translateY(-50px);
+    }
+    100%{
+        display: block;
+        opacity: 100%;
+        transform: translateY(0);
+    }
+}
+
+#calendar-mobile .jeg_block_title span{
+    font-size: 16px;
+}
+
+#calendar-mobile .vc_row,#calendar .vc_row{
+    position: absolute;
+    width: 350px;
+    right: 30px;
+    top: 60px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 10px 0;
+}
+#calendar-mobile.show .vc_row , #calendar.show .vc_row{
+    animation: CalendarOpenAnimation 0.3s ease ;
+}
+
+#calendar-mobile .widget_ajax_ac_widget,#calendar .widget_ajax_ac_widget {
+    padding: 5px;
+}
+ #calendar .select_ca #my_month, #calendar .select_ca #my_year {
+    width: 49%;
+    border-radius: 4px;
+}
+#calendar-mobile .select_ca #my_month, #calendar-mobile .select_ca #my_year{
+    border-radius: 4px;
+    margin-top: 8px;
+}
+
+#calendar-mobile #ajax_ac_widget th, #calendar #ajax_ac_widget th {
+    background: none;
+    color: #8A333E;
+}
+#calendar-mobile #ajax_ac_widget td, #calendar #ajax_ac_widget td {
+    border: none;
+    width: 40px;
+    line-height: 25px;
+}
+#calendar-mobile #my-calendar a,#calendar #my-calendar a {
+    background: none;
+    color: #8A333E;
+    border-radius: 4px;
+    font-weight: 700;
+}
+#calendar-mobile #today a, #calendar-mobile #today span ,#calendar #today a, #calendar #today span {
+    background: #8A333E !important;
+    color: #fff;
+    border: none;
+    line-height: 20px;
+    border-radius: 4px;
+}
+#calendar-mobile td.notday,#calendar td.notday {
+    color: #000000;
+}
+#calendar-mobile a.has-post:hover, #calendar a.has-post:hover {
+    background: #e0e0e0 !important;
+}
+#calendar-mobile #ajax_ac_widget::before, #calendar #ajax_ac_widget::before {
+	content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    z-index: 2;
+    right: 33px;
+    top: -7px;
+    transform: rotate(45deg);
+    border-left-style: solid;
+    border-left-color: #e0e0e0;
+    border-left-width: 1px;
+    border-top-style: solid;
+    border-top-color: #e0e0e0;
+    border-top-width: 1px;
+}
+@media (max-width: 479px) {
+#my_calender span {
+    line-height: 25px;
+}
+}
+
+#calendar-mobile .widget.widget_ajax_ac_widget,#calendar .widget.widget_ajax_ac_widget{
+    margin: 0;
+}
+#calendar-mobile .wpb_widgetised_column.wpb_content_element,#calendar .wpb_widgetised_column.wpb_content_element{
+    margin-bottom: 0;
+}
+
+/*Search */
+.jeg_header .jeg_search_expanded  .jeg_search_popup_expand form{
+    border-radius: 4px;
+}
+.jeg_header .jeg_search_expanded  .jeg_search_popup_expand form input{
+    border-radius: 4px;
+}
+
+.jeg_navbar_mobile .jeg_search_popup_expand .jeg_search_form {
+    border-radius: 4px!important;
+}
+.jeg_navbar_mobile .jeg_search_popup_expand .jeg_search_form  input{
+    border-radius: 4px!important;
+}
+
+
+/* Header bottom addvertisement */
+
+
+.jeg_ad.jeg_ad_top.jnews_header_bottom_ads{
+    margin: 1rem 0;
+    background-color: #fff;
+}
+.jeg_ad.jeg_ad_top.jnews_header_bottom_ads .ads-wrapper{
+    margin: 0 auto;
+    padding: 0 1rem;
+    background-color: #fff;
+    max-width: 1480px;
+}
+
+.jeg_ad.jeg_ad_top.jnews_header_bottom_ads .ads-wrapper .ads_image{
+    height: 180px;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+.jeg_ad.jeg_ad_top.jnews_header_bottom_ads .ads-wrapper .ads_image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.jeg_ad.jeg_ad_top.jnews_header_bottom_ads .ads-wrapper .ads_image_tablet{
+    height: 140px;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+.jeg_ad.jeg_ad_top.jnews_header_bottom_ads .ads-wrapper .ads_image_tablet img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.jeg_ad.jeg_ad_top.jnews_header_bottom_ads .ads-wrapper .ads_image_phone{
+    height: 100px;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+.jeg_ad.jeg_ad_top.jnews_header_bottom_ads .ads-wrapper .ads_image_phone img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+@media (max-width:460px) {
+    .jeg_ad.jeg_ad_top.jnews_header_bottom_ads .ads-wrapper .ads_image_phone{
+        height: 80px;
+    }
+}
+
+
+
+/* Footer */
+
+.footer-holder .row .copyright{
+    /* color: #fff; */
+    text-align: center;
+    line-height: 30px;
+    font-family: Mardoto, Helvetica, Arial, sans-serif;
+}
+
+.jeg_footer.dark  .jeg_menu_footer .menu-item a,.jeg_footer  .jeg_menu_footer .menu-item a{
+    transition: color 0.3s ease;
+}
+
+.jeg_footer.dark  .jeg_menu_footer .menu-item a:hover,.jeg_footer  .jeg_menu_footer .menu-item a:hover{
+    color: #fff;
+}
+
+.jeg_footer_primary .jeg_about .footer_logo_gpc{
+    display: block;
+}
+.jeg_footer_primary .jeg_about .footer_logo_gpc img{
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+}
+.jeg_footer_primary .jeg_footer_title.menu-title{
+    display: inline-block;
+    padding-right: 50px;
+}
+.jeg_footer_primary .jeg_footer_title.social-title{
+    display: inline-block;
+    padding-right: 50px;
+}
+
+
+@media (max-width:1000px) {
+    .jeg_footer_primary .jeg_about .footer_logo_gpc{
+        display: inline-block;
+    }
+    .jeg_footer_primary .jeg_about .footer_logo_gpc img{
+        
+        margin: 0;
+    }
+   /*  .jeg_footer_primary .jeg_about{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+        align-items: center;
+    }
+    .jeg_footer_primary .jeg_about .footer_logo{
+        margin-bottom: 0;
+    } */
+}
