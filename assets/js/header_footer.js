@@ -45,4 +45,44 @@ document.addEventListener('DOMContentLoaded',function(){
         // Remove the 'show' class from the calendar
         calendar.classList.remove('show');
     });
+
+    document.addEventListener('click',function(event){
+        const botomBar = document.querySelector('.jeg_bottombar')
+        const searchIcon =  document.querySelector('.jeg_search_wrapper')
+
+
+        if(searchIcon && searchIcon.contains(event.target)){
+            setTimeout(()=>{
+                if(botomBar.classList.contains('jeg_search_expanded')){
+                    botomBar.querySelector('.jeg_search_input').focus()
+                }
+            },200)
+        }
+        if (botomBar.contains(event.target))return;
+
+        searchIcon.querySelector('i').classList.remove('fa-close')
+        searchIcon.querySelector('i').classList.add('fa-search')
+        
+        botomBar.classList.remove('jeg_search_expanded')
+    })
+    document.addEventListener('click',function(event){
+        const botomBar = document.querySelector('.jeg_mobile_bottombar')
+        const searchIcon =  document.querySelector('.jeg_mobile_bottombar .jeg_search_wrapper')
+
+        if(searchIcon && searchIcon.contains(event.target)){
+            setTimeout(()=>{
+                if(botomBar.classList.contains('jeg_search_expanded')){
+                    botomBar.querySelector('.jeg_search_input').focus()
+                }
+            },200)
+        }
+        if (botomBar.contains(event.target))return;
+
+
+        searchIcon.querySelector('i').classList.remove('fa-close')
+        searchIcon.querySelector('i').classList.add('fa-search')
+        
+        botomBar.classList.remove('jeg_search_expanded')
+        
+    })
 })

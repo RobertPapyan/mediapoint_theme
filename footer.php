@@ -1,3 +1,6 @@
+<div id="no_comments_section" class="customized_modules">
+    <?php dynamic_sidebar( 'footer_top_posts' );?>
+</div>
 <div class="footer-holder" id="footer" data-id="footer">
         <div class="jeg_footer jeg_footer_sidecontent <?php echo esc_attr( get_theme_mod('jnews_footer_scheme', 'normal') ); ?>">
             <div class="jeg_footer_container <?php echo esc_attr( get_theme_mod('jnews_footer_force_fullwidth', false) ? 'jeg_container_full' : 'jeg_container' ); ?>">

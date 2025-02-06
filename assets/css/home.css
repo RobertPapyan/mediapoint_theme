@@ -35,9 +35,13 @@
 }
 .wpb_column.jeg_column.vc_column_container.vc_col-sm-9.jeg_main_content{
     float: none;
+    padding-right: 0;
 }
 
 
+.jeg_block_title i, .jeg_block_title span {
+    line-height: 28px!important;
+}
 /* Left sidebar */
 
 
@@ -75,7 +79,7 @@
 }
 #home_left_sidebar .jeg_post .jeg_post_title a{
     font-family: Mardoto, Helvetica, Arial, sans-serif;
-    font-weight: 400;
+    font-weight: 600;
 }
 #home_left_sidebar .jeg_post .jeg_thumb a div{
     border-radius: 10px;
@@ -117,72 +121,6 @@
     justify-content: space-between;
 }
 
-#center_content_column .custom_flex .custom_flex_item .jeg_block_heading{
-    border-radius: 8px;
-}
-
-#center_content_column .custom_flex .custom_flex_item .jeg_block_heading h3{
-    width: 100%;
-    text-align: center;
-    font-size: 18px;
-}
-#center_content_column .custom_flex .custom_flex_item .jeg_block_container .jeg_post{
-    width: 100%;
-    padding-right: 0;
-}
-
-#center_content_column .custom_flex .custom_flex_item .jeg_block_container .jeg_posts{
-    display: block;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-}
-
-#center_content_column .custom_flex .custom_flex_item .jeg_block_container .jeg_posts .jeg_post .jeg_thumb a div{
-    border-radius: 16px;
-}
-
-
-#center_content_column .custom_flex .custom_flex_item .jeg_block_container .jeg_posts .jeg_post .jeg_post_title a{
-    font-size: 14px;
-}
-
-#center_content_column .custom_flex .custom_flex_item .jeg_block_container .jeg_posts .jeg_post .jeg_meta_date{
-    color: #000;
-}
-#center_content_column .custom_flex .custom_flex_item .jeg_block_container .jeg_posts .jeg_post .jeg_meta_date i{
-    font-size: 14px;
-    margin-right: 4px;
-    color: #000;
-}
-
-#center_content_column .custom_flex .custom_flex_item .jeg_postblock_28 .jeg_posts .jeg_post .jeg_postblock_content::before{
-    content: '';
-    width: 6px;
-    height: 6px;
-    position: absolute;
-    top: 10px;
-    background-color: #8A333E;
-    border-radius: 100%;
-}
-
-
-
-#center_content_column .jeg_postblock_carousel .jeg_post .jeg_thumb a div{
-    border-radius: 16px;
-}
-
-#center_content_column .jeg_postblock_carousel .jeg_post .jeg_meta_date{
-    color: #000;
-}
-#center_content_column .jeg_postblock_carousel .jeg_post .jeg_meta_date i{
-    font-size: 14px;
-    margin-right: 4px;
-    color: #000;
-}
-
-
-
 
 
 /* Home right sidebar */
@@ -194,15 +132,25 @@
     border-radius: 1rem;
     max-height: fit-content;
 }
+@media (max-width:768px) {
+    #home_right_sidebar{
+        display: none;
+    }
+}
 #home_right_sidebar .jeg_wrapper{
     padding: 0 0.85rem;
-    padding-bottom: 1rem;
+    padding-bottom: 0.1rem;
     border-radius: 1rem;
 }
 
 #home_right_sidebar .jeg_block_heading{
     border-bottom-right-radius:10px;
     border-bottom-left-radius:10px;
+}
+#home_right_sidebar .jeg_block_heading h3{
+    width: 100%;
+    display: block;
+    text-align: center;
 }
 
 #home_right_sidebar .jeg_social_icon_block{
@@ -229,4 +177,69 @@
 }
 #home_right_sidebar .button_main a{
     min-width: 200px;
+}
+
+@media (max-width:1080px) {
+    #home_bottom_columns .jeg-vc-wrapper{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 2rem; 
+    }
+    #home_right_sidebar .button_main a{
+        min-width: 120px;
+    }
+    
+}
+@media (max-width:560px) {
+    #home_bottom_columns .jeg-vc-wrapper{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 2rem; 
+    }
+}
+
+
+/* Home bottom banner */
+
+#home_banner_bottom{
+    height: 180px;
+}
+
+@media (max-width:1000px) {
+    #home_banner_bottom{
+        height: 140px;
+    }
+    
+}
+@media (max-width:768px) {
+    #home_banner_bottom{
+        height: 100px;
+    }
+    
+}
+@media (max-width:460px) {
+    #home_banner_bottom{
+        height: 80px;
+    }
+}
+
+
+#home_banner_bottom figure{
+    width: 100%;
+    height: 100%;
+}
+
+#home_banner_bottom figure a{
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+#home_banner_bottom figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }

@@ -30,7 +30,7 @@ add_filter( 'get_the_archive_title', function ( $title ) {
     return $title;
 });
 
-function register_header_calendar_widget_area() {
+function register_mediapoint_widgets() {
     register_sidebar(array(
         'name'          => __('Header Calendar', 'your-text-domain'),
         'id'            => 'header_calendar',
@@ -40,8 +40,14 @@ function register_header_calendar_widget_area() {
         'before_title'  => '<h3 class="widget-title">',
         'after_title'   => '</h3>',
     ));
+    register_sidebar(array(
+        'id'=> 'footer_top_posts',
+        'name' => 'Footer Top Posts block'
+    ));
 }
-add_action('widgets_init', 'register_header_calendar_widget_area');
+
+
+add_action('widgets_init', 'register_mediapoint_widgets');
 
 function render_header_calendar_widget_area($atts) {
     // Check if the widget area has any active widgets

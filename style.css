@@ -15,9 +15,9 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 /* ------------------------------------------------------------------------- */
 .only-home {display: none;}
 body.home .only-home {display: block;}
-.jeg_thumb .jeg_post_category, .jeg_slide_caption .jeg_post_meta span.jeg_meta_author, .jeg_post_meta .jeg_meta_author, .jeg_post_meta .jeg_meta_comment {
+/* .jeg_thumb .jeg_post_category, .jeg_slide_caption .jeg_post_meta span.jeg_meta_author, .jeg_post_meta .jeg_meta_author, .jeg_post_meta .jeg_meta_comment {
 	display: none;
-}
+} */
 body.page .entry-header {display: none}
 .jeg_midbar .jeg_top_weather > .jeg_weather_temp > .jeg_weather_unit {
 	display: inline-block;
@@ -65,30 +65,6 @@ body.page .entry-header {display: none}
 	display: none;
 }
 
-
-
-/* footer vecto logo */
-.vecto {
-   position: absolute;
-    top: 10px;
-    right: 0;
-    width: 102px;
-}
-.vecto span {
-    font-size: 14px;
-    letter-spacing: 3px;
-    position: relative;
-    top: 10px;
-}
-.vecto img.vecto-red {
-    display: none;
-}
-.vecto:hover img.vecto-black, .vecto:focus img.vecto-black, .vecto:active img.vecto-black {
-    display: none;
-}
-.vecto:hover img.vecto-red, .vecto:focus img.vecto-red, .vecto:active img.vecto-red {
-    display: block;
-}
 
 
 /* mobile design */

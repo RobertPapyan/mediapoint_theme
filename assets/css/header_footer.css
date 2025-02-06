@@ -185,6 +185,26 @@
     border-radius: 4px!important;
 }
 
+.jeg_header .jeg_bottombar .jeg_search_wrapper form.jeg_search_form {
+     width: 80vw;
+     max-width: 1140px;
+    right: 0px!important;
+     top: 45px; 
+    transform: translateX(0);
+}
+
+.jeg_header .jeg_bottombar .jeg_search_wrapper form.jeg_search_form::before {
+    right: 15px!important;
+}
+.jeg_header .jeg_bottombar .jeg_search_wrapper form.jeg_search_form::after {
+    right: 15px!important;
+}
+.jeg_navbar_mobile .jeg_mobile_bottombar .jeg_search_wrapper .jeg_search_toggle::after ,
+.jeg_navbar_mobile .jeg_mobile_bottombar .jeg_search_wrapper .jeg_search_toggle::before {
+    display: none;
+}
+
+
 
 /* Header bottom addvertisement */
 
@@ -197,7 +217,7 @@
     margin: 0 auto;
     padding: 0 1rem;
     background-color: #fff;
-    max-width: 1480px;
+    max-width: 1180px;
 }
 
 .jeg_ad.jeg_ad_top.jnews_header_bottom_ads .ads-wrapper .ads_image{
@@ -246,7 +266,7 @@
     /* color: #fff; */
     text-align: center;
     line-height: 30px;
-    font-family: Mardoto, Helvetica, Arial, sans-serif;
+    font-family: "Webly Semibold", Helvetica, Arial, sans-serif;
 }
 
 .jeg_footer.dark  .jeg_menu_footer .menu-item a,.jeg_footer  .jeg_menu_footer .menu-item a{
@@ -273,8 +293,15 @@
     display: inline-block;
     padding-right: 50px;
 }
+.jeg_footer_primary .jeg_menu_footer li a {
+    font-size: 14px;
+    font-family: "Webly Semibold", Helvetica, Arial, sans-serif;
+}
 
 
+.jeg_footer_primary .socials_widget.nobg a .fa{
+    font-size: 20px;
+}
 @media (max-width:1000px) {
     .jeg_footer_primary .jeg_about .footer_logo_gpc{
         display: inline-block;
@@ -283,6 +310,7 @@
         
         margin: 0;
     }
+ 
    /*  .jeg_footer_primary .jeg_about{
         display: flex;
         flex-direction: column;
@@ -293,4 +321,16 @@
     .jeg_footer_primary .jeg_about .footer_logo{
         margin-bottom: 0;
     } */
+}
+
+#no_comments_section{
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+#no_comments_section{
+    list-style: none;
+}
+#no_comments_section .jeg_post_meta{
+    display: block;
 }
