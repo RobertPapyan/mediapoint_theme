@@ -85,4 +85,12 @@ document.addEventListener('DOMContentLoaded',function(){
         botomBar.classList.remove('jeg_search_expanded')
         
     })
+
+
+        const shareContainer = document.querySelector(".jeg_share_bottom_container");
+        const targetContainer = document.querySelector(".saboxplugin-tab");
+    
+        if (shareContainer && targetContainer) {
+            targetContainer.appendChild(shareContainer);
+        }
 })
