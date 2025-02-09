@@ -630,3 +630,6 @@ strong{
 .single-post #respond input,.single-post #respond textarea{
     border-radius: 0.5rem;
 }
+
+
+.page .jeg_share_top_container{display: none;}
