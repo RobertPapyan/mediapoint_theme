@@ -592,9 +592,19 @@ strong{
 
 .single-post .jeg_share_bottom_container .jeg_sharelist a{
     background-color: #8A333E;
-    width: 40px;
-    height: 40px;
+    width: 40px!important;
+    height: 40px!important;
     border-radius: 100%;
+}
+@media (max-width:480px) {
+    .single-post .jeg_share_bottom_container .jeg_sharelist a{
+        width: 35px!important;
+        height: 35px!important;
+    }
+    .single-post .saboxplugin-wrap .saboxplugin-gravatar{
+        margin: 0 auto!important;
+    }
+    
 }
 .single-post .jeg_share_bottom_container .jeg_sharelist a:hover{
     background-color: #792b36;
