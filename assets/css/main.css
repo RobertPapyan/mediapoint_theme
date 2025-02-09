@@ -427,7 +427,7 @@ strong{
 
 
 /* Single post */
-.single-post img, .single-post iframe{
+.single-post .post-wrapper img, .single-post .post-wrapper iframe{
     border-radius: 1rem;
 }
 
